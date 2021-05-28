@@ -1,0 +1,11 @@
+/*label.error{position: absolute; bottom: 0px; width: 100%;left: 15px;font-size: 15px;color: red;}*/
+label.error{position: absolute; width: 100%;left: 15px;font-size: 15px;color: red;padding: 13px 0px 0px 0px;}
+.alert { padding: 5px 28px;}
+.alert .close { float: right; width: 12px; height: 21px; color: #000; background: transparent; padding: 5px 20px; }
+.globalMessage button.close { background: transparent !important; }
+.alert-danger{border-bottom: 1px solid #721c24;}
+.alert-success{border-bottom: 1px solid #155724;}
+.alert-dismissible {width: 100%; position: fixed; z-index: 1100; text-align: center; border-radius: unset;}
+#signUpSubmit:disabled{background: #ddd}
+
+.slider{z-index: 0}

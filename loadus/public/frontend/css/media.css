@@ -1,0 +1,131 @@
+/* Landscape */
+@media only screen and (min-device-width: 781px) and (max-device-width: 1024px){
+	.wsmenu-list > li{position: relative;}
+	.wsmenu-click {display: block;position: absolute;right: 0;color: #6f6f6f;top: 0; z-index: 1;line-height: 85px;
+padding: 0px 0 3px;width: 16px;}
+	
+}
+/* @media (min-width:1200px) { */
+	/* .menu{margin-left:100px;} */
+/* } */
+@media (min-width:992px) and (max-width:1170px), (min-width:576px) and (max-width:767px) {
+	.dshContent, .sideMenu {padding-left:15px; padding-right:15px;}
+	.groups-aside .join-btn .box-half {font-size: 13px;}
+	.sideMenu {width: auto;}	
+}@media (max-width:1024px) {
+	.wsmenu-list > li > a {padding: 17px 14px 25px!important;}
+	h2.title{padding-left: 30px;}
+	h2.title.blue {background-position: -70px 0;}
+	h2.title.white {background-position: 30px -60px;}
+	h2.title:before{left: 0;}	
+	.option-list li{padding-left: 60px;}
+	.option-list li span{left: 10px;}	
+	.wsmenu > ul > li a{margin-left:0; margin-right:0;}
+	.ot-option {padding-top: 10px;}
+	.ot-option a{font-size: 14px;}
+	.sideMenu {width: auto;}
+	.wsmenu-list > li > a {padding-left:10px; padding-right:10px;}
+/* Portrait */
+}@media (max-width:991px) {
+	.left-grey:after{content:none;}
+	.sideMenu{padding:0;}
+	.dshContent{min-height:auto;}
+	.groups-aside .join-btn .box-half {font-size: 14px;}
+	.ot-option a{font-size: 16px;}
+	.groups-item [class^="col-"]:nth-child(n+3) {margin-top: 30px;}
+	.searchbox {padding-left: 10px;}
+	.searchbox a {width: 36px; height: 36px; padding: 6px 0px; font-size: 16px;}
+	.top-panel .tierTp {text-align:right;}
+	.top-panel .tierTp [class^="col-"]{display: inline-block !important; max-width: auto !important; width: auto !important;}
+	.hidden-lg-up {display:block;}
+	.hidden-md-down {display:none;}
+	.requested {top: -10px;right: 2px;}
+	.dashbaord .container{position:relative;}
+	.dashbaord .menu-btn{position:absolute; right:20px; left:auto; top:7px; height: 35px; width: 35px; border-radius:100%;}
+
+}@media (max-width:999px) {
+	.mobile-sub .wsmenu-submenu li a{border-bottom: 1px solid #fff;}
+	.slide-content h1 {font-size: 38px; line-height: 44px;}
+	.slide-content p {font-size: 18px; line-height: 26px;}
+	h2.title{font-size: 32px; padding-left: 30px;}
+	section.section .section-title {padding-bottom: 40px}
+	h2.title.blue {background-position: -70px 0;}
+	h2.title.white {background-position: 30px -60px;}
+	h2.title:before{left: 0;}
+	section.section:not(.slider):not(.page-banner){padding: 40px 0px;}
+	.option-list {padding-top: 30px;}
+	.option-list li{padding-left: 80px;}
+	.option-list li span{left: 21px;}
+	.option-list li, .option-list li:nth-child(2n+1){width: 100%; margin-right: 0px;}
+	.option-list li:nth-child(n+2) {margin-top: 20px;}
+	.plan-box {width: 50%;}
+	.plan-box:not(:first-child) {margin-left: 80px;}
+	.slide-content, .slide-content p {width: 100%;}
+	h4 {font-size: 16px;}
+	.Contact-info {width: 100%;}
+	.group-content {padding: 20px 15px 20px;}
+	.group-content h4{min-height: 62px; line-height: 22px}
+}@media (max-width:780px){
+	.wsmobileheader {position: absolute; left: auto; right: 5px;}
+	.header {padding: 5px 0;}
+	h2.title {font-size: 28px; padding-left: 25px;}
+	.account-setting {margin: 35px 60px 0 0;}
+	.hidden-lg-up {float:right;}
+}@media (max-width:767px) {
+	.slide-content h1 {font-size: 32px; line-height: 38px;}
+	.slide-content p {font-size: 16px; line-height: 24px;}
+	h2.title{font-size: 28px; padding-left: 26px;}
+	section.section .section-title {padding-bottom: 30px;}
+	.group-content {padding: 20px 10px 20px;}
+	section.section.team-group{background-size: cover;}
+	.option-list li, .option-list li:nth-child(2n+1){width: 47%;width: calc(50% - 15px);}
+	.option-list li:nth-child(2n+1){margin-right: 30px;}
+	.option-list li:nth-child(n+2) {margin-top: 0px;}
+	.option-list li:nth-child(n+3) {margin-top: 20px;}
+	.team-group-content {margin-top: 30px;}
+	.plan-box{padding: 30px 20px 30px 20px;}
+	.plan-box:not(:first-child) {margin-left: 30px;}
+	.footer-links h4 {padding-bottom: 20px}
+	.socail-links {margin-top: 10px; padding-top: 20px; border-top: 1px solid #fff;}
+	.footer {padding-top: 40px;}
+	.group-content h4{min-height: auto;}
+	/*----------- messages -----------------*/
+	.menuBox{ border-radius:10px; margin:0px; padding:0px 5px;}
+	.menuBox ul li a{ font-size:14px; font-weight:400; padding:15px 10px;}
+	.msgList li, .msgList li .application{ text-align:center;}
+	.msgList li .application{ margin-top:20px;}
+	.menuBox ul li:last-child a{ font-size:14px;}
+	.msgList li .msgDetail figure, .msgList li .msgDetail figure img{ display:inline-block; margin-bottom:10px;}
+	.dashboardMenu{ margin-bottom:30px;}
+	.msgList li{ padding:20px 16px;}
+	.wsmenu-list > li > a {padding: 10px 14px 10px !important;}
+	/*dashborad*/
+	.ussePic {position: relative; display: inline-block;}
+	.ot-option {padding-top: 10px;}
+	.ot-option a {font-size: 14px;}
+	
+	
+}@media (max-width:599px) {
+	.slide-content h1 {font-size: 24px; line-height: 30px;}
+	.slide-content p {font-size: 14px; line-height: 20px;}
+	h2.title {font-size: 24px; padding-left: 20px;}
+	section.section .section-title {padding-bottom: 20px;}
+	.option-list li, .option-list li:nth-child(2n+1){width: 100%; margin-right: 0px;}
+	.option-list li:nth-child(n+2) {margin-top: 20px;}
+	.plan-box {width: 100%; margin-right: 0;}
+	.plan-box:not(:first-child) {margin-left: 0px; margin-top: 30px;}
+	.quick-links{margin-top: 30px; padding-top: 20px; border-top: 1px solid #fff;}
+	.quick-links li{width: 48%; float: left; margin: 0 1% 15px;}
+	.group-img{text-align: center;}
+	.owl-carousel .owl-item .group-img img{display: inline-block;}
+	h2.title span {font-size: 14px;}
+	.profile button {min-width: 120px;}
+	.loginForm button {height: 42px; line-height: 42px; font-size: 18px;}
+	.loginForm a {font-size: 16px;}
+}@media (max-width:575px) {
+	.groups-item [class^="col-"]:nth-child(n+2) {margin-top: 30px;}
+	.groups-item .group-img img {width: 100%; height: 238px; object-fit: cover;}
+	.wsmobileheader {top: -37px;}
+}
+
+

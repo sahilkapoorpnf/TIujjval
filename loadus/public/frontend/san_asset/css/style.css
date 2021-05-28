@@ -1,0 +1,1220 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0 !important;
+    outline-offset: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #2c3145;
+}
+ul, ol {
+    list-style: none;
+    padding: 0; margin: 0;
+}
+
+/*+++ browser scrollbar start +++*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f2f2f2; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background:var(--primary-color); 
+    border-radius: 10px;
+  }
+  
+
+/*+++ browser scrollbar exit +++*/
+
+/* ======================= Variable Define ======================= */
+:root {
+    --primary-color: #0109ff;
+    --secondary-color: #128a4c;
+    --black-color: #000000;
+    --gray-color: #707070;
+    --light-gray: #f0f0f0;
+    --white-color: #ffffff;
+    --footer-dark: #1e1e1e;
+    --footer-light: #252525;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'futura_md_btmedium'; 
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+section {
+    padding: 6rem 0;
+}
+.btn {
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1.1rem 4.5rem;
+    border: none;
+    border-radius: 1.2rem;
+    outline: none;
+    display: block;
+}
+
+/* ======================= Header CSS ======================= */
+.header {
+    background: #fff;
+    padding: 0;
+    width: 100%;
+}
+.header.sticky {
+    background: #fff;
+    box-shadow: 0 0 8px #d7d6d6;
+    transition: all 0.4s ease;
+}
+.header.sticky .navbar-nav a.nav-link {
+    color: var(--black-color);
+
+}
+
+.menuTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header.sticky .menuTop a {
+    color: var(--black-color);
+
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+.navi {
+}
+.menuTop .navi ul li {
+    display: inline-block;
+}
+.menuTop .navi ul li a {
+    font-family: 'futura_md_btmedium';
+    font-size: 1.4rem;
+    padding: 2.5rem 1.8rem;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+.menuTop .navi ul li a.active, .navi ul li a:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.menuTop .navi ul li a.searchbtn {
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: .4rem 1.2rem;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+}
+.menuTop .navi ul li a.searchbtn:hover {
+    background: transparent;
+    color: var(--black-color);
+    border: 2px solid var(--primary-color);
+}
+
+header input{
+    display: none;
+}
+
+header label{
+    font-size: 3rem;
+    color:var(--primary-color);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+span.logo img {
+    max-width: 100px;
+}
+.header .navbar-nav a.nav-link {
+    position: relative;
+    padding: 1rem 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--text-color);
+    -webkit-transition: font-weight 0.3s ease-in-out;
+    -moz-transition: font-weight 0.3s ease-in-out;
+    -ms-transition: font-weight 0.3s ease-in-out;
+    -o-transition: font-weight 0.3s ease-in-out;
+    transition: font-weight 0.3s ease-in-out;
+}
+.header .navbar-nav a.nav-link.active{
+    font-weight: 500;
+    transition:font-weight 0.3s ease-in-out;
+}
+.header .navbar-nav a.nav-link::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 0.3rem;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    transition: width .3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+.header .navbar-nav a.nav-link:hover::after,
+.header .navbar-nav a.nav-link.active::after{
+    width:60%;
+    transition:width .3s;
+}
+
+/* ======================= Header CSS Exit======================= */
+
+
+/* ======================= banner section start ======================= */
+.heroBg {
+    background-image: url(./../images/banner1.jpg);
+    background-position: center center;
+    width: 100%;
+    height: 85vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bannerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 5rem;
+}
+.bannerSearchBox {
+    flex-basis: 40%;
+    background: #fff;
+    border-radius: 1.2rem;
+    padding: 1rem 1.5rem;
+    margin-right: 1rem;
+}
+.banSearchBox {
+    display: flex;
+    align-items: center;
+}
+.banSearchBox input.form-control {
+    color: var(--light-color);
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: .5rem;
+    border: none;
+    outline: none;
+}
+.banSearchBox input.form-control:focus {
+    box-shadow: none;
+}
+.banSearchBox .btn {
+    font-size: 1.6rem;
+    color: var(--gray-color);
+    padding: .275rem .55rem;
+    background: transparent;
+}
+.banSearchBox .btn:focus {
+    box-shadow: none;
+}
+.banSearchBox .btn img {
+    max-width: 26px;
+}
+
+.bannerLocationBox {
+    flex-basis: 40%;
+    background: #fff;
+    border-radius: 1.2rem;
+    padding: 1rem 1.5rem;
+    margin-left: 1rem;
+}
+.locactBox {
+
+}
+
+.bannerSearch {
+    margin-top: 2rem;
+}
+.bannerSearch .btn {
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1.2rem 5.5rem;
+    border: none;
+    border-radius: 1.2rem;
+    outline: none;
+    display: block;
+}
+
+/* ======================= banner section exit ======================= */
+
+
+/* ======================= gym section start ======================= */
+.gymTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gymTopLeft h1 {
+    font-family: 'futura_md_btbold';
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+
+.gymTopRight .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+.gymTopRight {
+    display: flex;
+    align-items: center;
+}
+.gymTopRight .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    margin-right: .8rem;
+    text-transform: capitalize;
+}
+.gymTopRight .btn:hover {
+    color: var(--white-color);
+}
+.gymTopRight .secondary {
+    font-size: 1.6rem;
+    background: #cdcdcd;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.gymTab {
+    margin: 2rem 0 4rem;
+}
+.gymTab .nav-pills .nav-link {
+    border: 1px solid var(--gray-color);
+    color: var(--gray-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: .5rem 1.5rem;
+    margin-right: .8rem;
+    border-radius: 2.5rem;
+}
+.gymTab .nav-pills .nav-link.active, .gymTab .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+.gymTab .nav-pills .dropdown-menu .dropdown-item {
+    font-size: 1.5rem;
+}
+.gymTab .dropdown-item.active, .gymTab .dropdown-item:active {
+    background-color: var(--primary-color);
+}
+
+.gymFlex {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px 1px #e0dddd;
+    margin-bottom: 3rem;
+}
+.gymFlexImage {
+    flex-basis: 25%;
+    height: 230px;
+}
+.gymFlexImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gymFlexText {
+    flex-basis: 75%;
+    padding-left: 1.8rem;
+}
+.gymFlexText h2 {
+    font-family: 'futura_md_btbold';
+    color: var(--black-color);
+    font-size: 2.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.gymStar ul {
+    display: flex;
+    margin-bottom: .5rem;
+}
+
+.gymStar ul li {
+    font-size: 1.8rem;
+    color: #fecd33;
+    padding-right: .7rem;
+}
+.gymStar ul li span {
+    color: #000;
+}
+
+.gymFlexText p {
+    font-size: 2rem;
+    color: var(--gray-color);
+    line-height: 2.8rem;
+    margin-bottom: .5rem;
+    width: 70%;
+}
+.gymFlexText a {
+    color: #fe0000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-top: 1rem;
+    display: block;
+}
+
+
+.gymPagination {
+    padding-top: 2rem;
+}
+.gymPagination .pagination .page-link {
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--gray-color);
+    border: none;
+    outline: none;
+}
+.gymPagination .pagination .page-item.active .page-link {
+    z-index: 3;
+    color: var(--footer-dark);
+    background-color: transparent;
+    border-color: transparent;
+}
+.gymPagination .pagination .page-item.disabled .page-link {
+    color: #b7b8b9;
+    pointer-events: none;
+    cursor: auto;
+    background-color: transparent;
+    border-color: transparent;
+}
+.gymPagination .pagination  .page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+}
+
+
+/* ======================= gym section exit ======================= */
+
+/* ======================= Business Section Start ======================= */
+.bussinesBx {
+    width: 100%;
+    box-shadow: 0px 2px 8px 1px #dcdadb;
+}
+.mainTitle {
+    margin-bottom: 5rem;
+}
+.mainTitle h1 {
+    font-size: 2.8rem;
+    color: var(--gray-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bussinesImage img {
+    width: 100%;
+}
+.bussinesTxt {
+    padding: 1.5rem;
+    text-align: center;
+}
+.bussinesTxt h2 {
+    font-size: 2.4rem;
+    color: var(--gray-color);
+}
+/* ======================= Business Section Start ======================= */
+
+/* ======================= Popular Section Start ======================= */
+section.popular {
+    padding-top: 0rem;
+}
+.popularBox {
+    width: 100%;
+    margin-bottom: 3rem;
+    border: 1px solid #c5c4c4;
+    transition: all .4s ease;
+    cursor:pointer;
+}
+.popularBox:hover {
+    box-shadow: 1px 2px 10px 1px #bbb9bb;
+}
+.popularImage{
+    position: relative
+}
+.popularImage img {
+    width: 100%;
+}
+.popularImage .fa-heart {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    font-size: 3.5rem;
+    color: #fecd33;
+}
+.popstar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.popstar ul {
+    display: flex;
+    margin-bottom: .5rem;
+}
+.popstar ul li {
+    font-size: 1.8rem;
+    color: #fecd33;
+    padding-right: .7rem;
+}
+.popstar ul li span {
+    color: var(--white-color);
+}
+
+.popularArea {
+    padding: 1.5rem .8rem;
+}
+.popularArea h2 {
+    font-family: 'futura_md_btbold';
+    color: var(--black-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.popularText {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popularLeft {
+
+}
+.popularLeft h6 {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    margin-bottom: .2rem;
+}
+.popularLeft p {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    display: flex;
+    align-items: center;
+}
+.popularLeft p span {
+    font-family: 'futura_md_btbold';
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-left: .4rem;
+}
+.popularRight {
+}
+.popularRight .btn {
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 2.5rem;
+    outline: none;
+    display: block;
+}
+
+/* ======================= Popular Section Exit ======================= */
+
+/* ======================= Feature Section Start ======================= */
+section.feature {
+    padding-top: 0px;
+}
+.featureBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--light-gray);
+    transition: all .4s ease;
+    cursor: pointer;
+    position: relative;
+}
+.featureBox:hover {
+    box-shadow: 0px 2px 10px 0px #e8e6e8;
+}
+.offershape {
+    position: absolute;
+    top: 8px;
+    left: -12px;
+    background: #28c10c;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding: .4rem 2.2rem .5rem 1.2rem;
+    text-transform: uppercase;
+}
+.offershape:before {
+    position: absolute;
+    content: "";
+    left: -12px;
+    bottom: -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid #239132;
+    border-bottom: 12px solid transparent;
+}
+.offershape:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 7px solid #ffffff;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+
+.featureImage {
+    flex-basis: 30%;
+    padding: 1.2rem;
+    border: 1px solid #f3f3f3;
+}
+.featureImage img {
+    width: 100%;
+}
+.featureArea {
+    flex-basis: 70%;
+    padding-left: 1.8rem;
+}
+.featureTop {
+    position: relative;
+}
+.featureTop .fa-heart {
+    position: absolute;
+    top: 17px;
+    right: 0;
+    font-size: 1.5rem;
+    color: #3ab54b;
+}
+.featureTop h2 {
+    font-family: 'futura_md_btbold';
+    color: var(--black-color);
+    font-size: 2rem;
+    margin-bottom: .3rem;
+}
+.featureTop p {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    margin-bottom: .5rem;
+}
+
+.featureText {
+    width: 100%;
+}
+
+.featureTime {
+    margin-top: 1.4rem;
+}
+.featureTime ul {
+    display: flex;
+    margin-bottom: .5rem;
+}
+.featureTime ul li {
+    font-family: 'futura_md_btbold';
+    font-size: 1.2rem;
+    color: #989797;
+    padding-right: .7rem;
+}
+.featureTime ul li:last-child {
+    padding-right: 0rem;
+}
+.featureTime ul li i {
+    color: #c33332;
+}
+
+
+.featstar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.featstar ul {
+    display: flex;
+    margin-bottom: .5rem;
+}
+.featstar ul li {
+    font-size: 1.2rem;
+    color: #fecd33;
+    padding-right: .5rem;
+}
+.featstar ul li:last-child {
+    padding-right: 0rem;
+}
+.featstar ul li span {
+    color: var(--gray-color);;
+}
+.featstar p {
+    font-family: 'futura_md_btbold';
+    font-size: 1.2rem;
+    color: #989797;
+    margin-bottom: .2rem;
+    margin-left: .8rem;
+}
+
+/* ======================= Feature Section Exit ======================= */
+
+/* ======================= App Section Start ======================= */
+section.appSection {
+    background: var(--light-gray);
+    padding-bottom: 0;
+}
+.appBoxFlex {
+    display: flex;
+    align-items: center;
+}
+.appBoxA {
+    flex-basis: 35%;
+}
+.appBoxA img {
+    width: 100%;
+}
+.appBoxB {
+    flex-basis: 65%;
+    padding-left: 5rem;
+}
+
+.appBoxText {
+    width: 100%;
+}
+.appBoxText h2 {
+    font-family: 'futura_md_btbold';
+    color: var(--gray-color);
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.appBoxText p {
+    font-size: 1.4rem;
+    color: var(--gray-color);
+}
+
+.appIcons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+.appIcons span {
+    margin-right: 1rem;
+}
+.appIcons span img {
+    max-width: 170px;
+}
+
+.appMail {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.appMail .form-control {
+    font-size: 1.2rem;
+    color: var(--gray-color);
+    padding: .575rem .75rem;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0px;
+    border: 1px solid #cecbcb;
+    width: 75%;
+}
+.appMail .form-control:focus {
+    box-shadow: none;
+}
+.appMail .btn {
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.2rem;
+    height: 40px;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    display: block;
+}
+
+/* ======================= App Section Exit ======================= */
+
+
+
+
+/* ======================= Footer CSS Start =======================*/
+
+.footer {
+    background-color: var(--footer-light);
+    padding: 0;
+}
+footer {
+    padding: 5rem 0;
+}
+footer .footerBx{}
+footer .footerBx h3 {
+    font-size: 1.8rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+.footerAddress {
+    display: flex;
+    width: 75%;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px dotted #434342;
+}
+.footerAddress:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.footerIcon {
+    margin-right: 1.5rem;
+}
+
+.footerAddress .footerTxt {
+    
+}
+.footerAddress .footerTxt h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--gray-color);
+    margin-bottom: .3rem;
+}
+.footerAddress .footerTxt h5 a {
+    color: var(--gray-color);
+}
+.footerAddress .footerTxt p {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #434342;
+}
+
+.footerLinks  {}
+
+.footerLinks ul a {
+    color: var(--gray-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 3rem;
+    padding-left: 2.4rem;
+    margin-bottom: .5rem;
+    display: block;
+    position: relative;
+}
+.footerLinks ul a::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var( --primary-color);
+}
+
+.footerSocial {}
+.footerSocial ul {
+}
+.footerSocial ul li {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+.footerBx .footerSocial li a {
+    background: #424242;
+    color: #c7c4c4;
+    font-size: 1.6rem;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    transition: all .4s ease;
+}
+.footerBx .footerSocial li:hover a {
+    background: #c7c4c4;
+    color: #424242;
+}
+
+.footerDark {
+    background: var(--footer-dark);
+    padding: 1.5rem;
+}
+.copyright p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+/* ======================= Footer CSS Exit =======================*/
+
+
+/*== Scroll Top ==*/
+.back-to-top{
+    position:fixed;
+    bottom:2.5rem;
+    right:2rem;
+    z-index:100;
+    display:none;
+}
+.back-to-top a {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    display: block;
+    background: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+}
+
+
+/* === media query start === */
+
+@media screen and (max-width: 1080px){
+    
+}
+
+@media screen and (max-width: 991px){
+    .header {
+        padding: .8rem 0rem;
+    }
+    header label{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menuTop .navi {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--white-color);
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        z-index: 9;
+        transition:all .4s ease-in-out;
+    }
+    .menuTop .navi ul li {
+        display: inherit;
+    }
+    
+    .menuTop .navi ul li a {
+        display: block;
+        color: var(--text-color);
+        padding: 1.5rem 1.8rem;
+        margin: 1rem 0;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+   
+    .menuTop input:checked ~ .navi{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    .menuTop input:checked ~ label::before{
+        content:'\f00d';
+    }
+   
+    .menu-toggle {
+        position: relative;
+    }
+    .menu-toggle span {
+        display: block;
+        background: var(--primary-color);
+        width: 2.5rem;
+        height: .4rem;
+        margin: .5rem;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: .4rem;
+        position: relative;
+    }
+    .menu-toggle.active span:nth-child(2) {
+        display: none;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: -.5rem;
+        position: relative;
+    }
+
+
+    /* -- business responsive start */
+        .col-md-6 .bussinesBx {
+        margin-bottom: 3rem;
+    }
+
+    .appMail .form-control {
+         width: 70%;
+    }
+   
+    /* -- business responsive start */
+
+
+    .footerAddress {
+        width: 100%;
+    }
+    .gymFlexText p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    /*== banner responsive start ==*/
+    .heroBg {
+        height: 65vh;
+    }
+    .bannerBox {
+        flex-direction: column;
+    }
+    .bannerSearchBox {
+        flex-basis: 100%;
+        width: 100%;
+        padding: .5rem 1.2rem;
+        margin-right: 0;
+        margin-bottom: 2.5rem;
+    }
+    .bannerLocationBox {
+        flex-basis: 100%;
+        width: 100%;
+        padding: .5rem 1.2rem;
+        margin-left: 0;
+    }
+
+    /*== banner responsive exit ==*/
+
+    /*== gym responsive start ==*/
+    .gymTopLeft h1 {
+        font-size: 2.4rem;
+    }
+    .gymFlex {
+        flex-direction: column;
+    }
+    .gymFlexImage {
+        flex-basis: 100%;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .gymFlexText {
+        flex-basis: 100%;
+        padding-left: 0;
+        padding: 1.5rem;
+    }
+    .gymFlexText h2 {
+        font-size: 2.4rem;
+    }
+    .gymFlexText p {
+        font-size: 1.8rem;
+    }
+    /*== gym responsive exit ==*/
+
+    /* -- business responsive start */
+    .appBoxFlex {
+        flex-direction: column;
+    }
+
+    .appBoxA {
+        flex-basis: 35%;
+        order: 2;
+    }
+    .appBoxB {
+        flex-basis: 65%;
+        padding-left: 0rem;
+        order: 1;
+        margin-bottom: 3rem;
+    }
+    /* -- business responsive exit */
+
+    footer .footerBx {
+        margin-bottom: 3rem;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 575px){
+    section {
+        padding: 3rem 0;
+    }
+    .bannerBox {
+        padding: 0;
+    }
+    .gymTopLeft h1 {
+        font-size: 2rem;
+    }
+    .gymFlexText h2 {
+        font-size: 2rem;
+    }
+
+    .gymPagination .pagination .page-link {
+        padding: .2rem 1rem;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .gymFlexText p {
+        font-size: 1.6rem;
+    }
+
+    /* -- business responsive Start */
+    .offershape {
+        display: none;
+    }
+
+    
+    .mainTitle {
+        margin-bottom: 4rem;
+    }
+    .featureBox {
+        flex-direction: column;
+    }
+    .featureImage {
+        width: 100%;
+    }
+    .featureImage img {
+        max-width: 150px;
+    }
+    .featureArea {
+        width: 100%;
+        padding-left: 0;
+    }
+    .featureBox {
+        padding: 1.5rem 0rem;
+    }
+    /* -- business responsive Exit */
+    
+}
+
+@media screen and (max-width: 480px){
+    /* -- business responsive start */
+    .appBoxText h2 {
+        font-size: 1.8rem;
+    }
+    .appIcons {
+        flex-direction: column;
+    }
+    .appIcons span img {
+        width: 100%;
+    }
+    .appMail .form-control {
+        width: 100%;
+    }
+    .appIcons span {
+        margin-right: 0rem;
+        margin-top: 1rem;
+        display: block;
+    }
+    .appMail {
+        flex-direction: column;
+    }
+    .appMail .btn {
+        padding: 1rem 1.8rem;
+        margin-top: 1.2rem;
+    }
+    /* -- business responsive exit */
+
+
+}
+
+@media screen and (max-width: 360px){
+    .gymPagination .pagination .page-link {
+        padding: .2rem .8rem;
+        font-size: 1.6rem;
+    }
+
+}
+
+/* === media query exit === */
